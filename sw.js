@@ -1,5 +1,5 @@
 // Service worker: кэширует приложение, чтобы оно открывалось без интернета.
-const CACHE = "meal-prep-afee3021c2";
+const CACHE = "meal-prep-4814dde346";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
